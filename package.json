@@ -1,0 +1,9 @@
+{
+  "name": "mullet uri helper",
+  "version": "0.0.1",
+  "description": "",
+  "main": "main.js",
+  "dependencies": {},
+  "mullet": {
+  }
+}
