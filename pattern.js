@@ -44,11 +44,11 @@ UriPattern.prototype.getVal = function(match,rec) {
     switch(match.filter) {
         case "YYYY":
             if(!(val instanceof Date))
-                val = new Date(val);
+                val = new Date(val && val.$date ? val.$date : val);
             return val.getFullYear();
         case "MM":
             if(!(val instanceof Date))
-                val = new Date(val);
+                val = new Date(val && val.$date ? val.$date : val);
             var mo = val.getMonth()+1;
             if(mo<10)   mo = "0" + mo;
             return mo + '';
